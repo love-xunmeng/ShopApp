@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	    	 
+	<TextView
+	    android:id="@+id/shoping_car_goods_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp" />
+
+	<TextView
+	    android:id="@+id/shopping_car_goods_price"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp" />
+	
+	<TextView
+	    android:id = "@+id/shopping_car_goods_quantity"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp" />
+	
+</LinearLayout>

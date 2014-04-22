@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt" />
+    
+    <EditText
+        android:id="@+id/txtShoppingList"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    </EditText>
+    
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit">
+    </Button>
+    
+    <Button
+        android:id="@+id/btnNewActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newActivity">
+    </Button>
+    
+
+
+</LinearLayout>

@@ -40,9 +40,8 @@ public class GoodsListRunnable implements Runnable {
 			OutputStreamWriter osw = new OutputStreamWriter(socket.getOutputStream(), "utf-8");
 			BufferedWriter bw = new BufferedWriter(osw);
 			PrintWriter pw = new PrintWriter(bw, true);
-			pw.println(category_name);
-			
-			Log.d("GoodsListRunnable", "Socket sent.");
+			pw.println("Goods");
+			//pw.println(category_name);
 			
 			InputStreamReader isr = new InputStreamReader(socket.getInputStream(), "utf-8");
 			BufferedReader br = new BufferedReader(isr);
@@ -51,7 +50,7 @@ public class GoodsListRunnable implements Runnable {
 				Log.e("GoodsListRunnable", "null == dataFromServer");
 			}else{
 				//json
-				Log.d("GoodsListRunnable", dataFromServer);
+				//Log.d("GoodsListRunnable", dataFromServer);
 			}
 			goodsItemList = new ArrayList<Map<String, Object>>();
 			JSONArray jsonArray = new JSONArray(dataFromServer);

@@ -8,21 +8,22 @@
     <ListView
        android:id="@+id/android:list"
        android:layout_width="fill_parent"
-       android:layout_height="fill_parent">
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true">
    </ListView>
 
-    <TextView 
-        android:id = "@+id/total_cost"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/btnOpenShoppingCar"/>
-    
     <Button
-        android:id="@+id/btnOpenShoppingCar"
-        android:text="@string/shopping_car"
+        android:id="@+id/btnBuy"
+        android:text="@string/buy"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">    
     </Button>
+    
+    <TextView 
+        android:id = "@+id/total_cost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnBuy"/>
  
 </RelativeLayout>

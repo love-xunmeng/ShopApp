@@ -1,14 +1,11 @@
 package com.michael.shopapp;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -117,7 +114,7 @@ public class GoodsListActivity extends ListActivity{
 		
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-			Log.d("GoodsListAcitivity", this.toString());
+			//Log.d("GoodsListAcitivity", this.toString());
 			ViewHolder holder = null;
 			final int selectedItem = position;
 			if(null == convertView) {

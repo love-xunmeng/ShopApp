@@ -11,5 +11,6 @@
     <string name="app_name_catalog">分类</string>
     <string name="shopping_car">提交</string>
 	<string name="app_name_shopping_car">购物车</string>
+	<string name="buy">购买</string>
     
 </resources>

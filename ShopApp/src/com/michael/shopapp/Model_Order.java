@@ -57,7 +57,7 @@ public class Model_Order implements Parcelable {
 		dest.writeInt(this.goodsId);
 	}
 	
-	public static final Parcelable.Creator<Model_Order> CREATER = new Creator<Model_Order>(){
+	public static final Parcelable.Creator<Model_Order> CREATOR = new Creator<Model_Order>(){
 
 		@Override
 		public Model_Order createFromParcel(Parcel source) {

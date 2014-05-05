@@ -1,6 +1,5 @@
 package com.michael.shopapp;
 
-import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -43,6 +42,9 @@ public class ShoppingCarActivity extends ListActivity {
 			oneItem.put("goods_price", orderList.get(i).getGoodsPrice());
 			oneItem.put("goods_quantity", orderList.get(i).getQuantity());
 			dataList.add(oneItem);
+			//for debug
+			Log.d("ShoppingCarActivity", orderList.get(i).getGoodsId() + ":" + orderList.get(i).getQuantity());
+			//end of debug
 		}
 		
 		ShoppingCarAdapter adapter = new ShoppingCarAdapter(this, dataList);

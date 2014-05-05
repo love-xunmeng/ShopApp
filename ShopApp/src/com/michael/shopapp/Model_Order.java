@@ -54,7 +54,7 @@ public class Model_Order implements Parcelable {
 		dest.writeInt(this.goodsId);
 		dest.writeString(this.goods_name);
 		dest.writeFloat(this.goods_price);
-		dest.writeInt(this.goodsId);
+		dest.writeInt(this.quantity);
 	}
 	
 	public static final Parcelable.Creator<Model_Order> CREATOR = new Creator<Model_Order>(){

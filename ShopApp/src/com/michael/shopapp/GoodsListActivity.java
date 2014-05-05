@@ -55,6 +55,13 @@ public class GoodsListActivity extends ListActivity{
 
 			@Override
 			public void onClick(View arg0) {
+				
+				//for debug
+				for(int i = 0; i < orderList.size(); ++i){
+					Log.d("GoodsListActivity", orderList.get(i).getGoodsId() + ":" + orderList.get(i).getQuantity());
+				}
+				//end of debug
+				
 				Bundle bundle = new Bundle();
 				bundle.putParcelableArrayList("data", orderList);
 				Intent intent = new Intent();

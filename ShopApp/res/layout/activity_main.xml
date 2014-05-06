@@ -4,34 +4,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context=".MainActivity" >
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/prompt" />
-    
-    <EditText
-        android:id="@+id/txtShoppingList"
-        android:inputType="text"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        
-    </EditText>
     
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnMainRegister"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/submit">
+        android:text="@string/main_register">
     </Button>
-    
-    <Button
-        android:id="@+id/btnNewActivity"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/newActivity">
-    </Button>
-    
-
-
+   
 </LinearLayout>

@@ -12,5 +12,14 @@
     <string name="shopping_car">提交</string>
 	<string name="app_name_shopping_car">购物车</string>
 	<string name="buy">购买</string>
+	<string name="app_name_register">注册（带*必填）</string>
+	<string name="register_prompt_user_name">姓名*</string>
+	<string name="register_prompt_user_password">密码</string>
+	<string name="register_prompt_user_mobile_phone">手机*</string>
+	<string name="register_prompt_user_phone">固定电话</string>
+	<string name="register_prompt_user_address">地址*</string>
+	<string name="register_prompt_user_email">Email</string>
+	<string name="register_prompt_register">注册</string>
+	<string name="main_register">注册</string>
     
 </resources>

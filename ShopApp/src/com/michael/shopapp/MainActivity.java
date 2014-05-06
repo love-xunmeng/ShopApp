@@ -11,36 +11,19 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity {
 	
-	private EditText txtShoppingList = null;
-	private Button btnSubmit = null;
-	private Button btnNewActivity = null;
+	private Button btnRegister = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        txtShoppingList = (EditText)findViewById(R.id.txtShoppingList);
-        btnSubmit = (Button)findViewById(R.id.btnSubmit);
-        btnNewActivity = (Button)findViewById(R.id.btnNewActivity);
-        
-        btnSubmit.setOnClickListener(new OnClickListener(){
-        	@Override
-        	public void onClick(View v){
-        		String message = txtShoppingList.getText().toString() + "\r\n";
-        		NetworkThread networkThread = new NetworkThread("Catalog");
-        		Thread thread = new Thread(networkThread);
-        		thread.start();
-        	}
-        });
-        
-        btnNewActivity.setOnClickListener(new OnClickListener(){
+        btnRegister = (Button)findViewById(R.id.btnMainRegister);
+        btnRegister.setOnClickListener(new OnClickListener(){
         	@Override
         	public void onClick(View v){
         		Intent intent = new Intent();
-        		//intent.setClass(MainActivity.this, GoodsListActivity.class);
-        		//MainActivity.this.startActivity(intent);
-        		intent.setClass(MainActivity.this, CatalogActivity.class);
+        		intent.setClass(MainActivity.this, RegisterActivity.class);
         		MainActivity.this.startActivity(intent);
         	}
         });

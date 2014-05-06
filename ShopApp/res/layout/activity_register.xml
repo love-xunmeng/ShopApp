@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <!-- 用户姓名 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_prompt_user_name">
+    </TextView>
+    <EditText
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_user_name">
+    </EditText>
+    
+    <!-- 手机号码 -->
+    <TextView
+        android:text="@string/register_prompt_user_mobile_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    
+    <EditText 
+        android:id="@+id/register_mobile_phone"
+        android:inputType="phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <!-- 地址 -->
+    <TextView
+        android:text="@string/register_prompt_user_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    
+    <EditText
+        android:id="@+id/register_address"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    
+    <!-- Email -->
+    <TextView 
+        android:text="@string/register_prompt_user_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <EditText 
+        android:id="@+id/register_email"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    <!--  -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_prompt_register">
+    </Button>
+    
+</LinearLayout>

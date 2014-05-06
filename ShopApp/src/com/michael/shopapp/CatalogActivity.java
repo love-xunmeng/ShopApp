@@ -29,7 +29,7 @@ public class CatalogActivity extends ListActivity {
 		List<String> items = null;
 		try{
 			//Log.d("CatalogActivity", "thread start");
-			NetworkThread networker = new NetworkThread("Catalog");
+			CatalogRunnable networker = new CatalogRunnable("Catalog");
 			Thread thread = new Thread(networker);
 			thread.start();
 			thread.join();

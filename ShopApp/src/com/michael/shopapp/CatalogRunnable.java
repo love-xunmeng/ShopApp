@@ -17,12 +17,12 @@ import org.json.JSONArray;
 
 import android.util.Log;
 
-public class NetworkThread implements Runnable{
+public class CatalogRunnable implements Runnable{
 
 	private String message_ = null;
 	private List<String> catalogList = null;
 	
-	public NetworkThread(String message)
+	public CatalogRunnable(String message)
 	{
 		message_ = message;
 	}

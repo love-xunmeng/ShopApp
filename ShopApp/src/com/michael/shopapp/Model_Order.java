@@ -1,6 +1,5 @@
 package com.michael.shopapp;
 
-import android.annotation.SuppressLint;
 import android.os.Parcel;
 import android.os.Parcelable;
 

@@ -2,8 +2,6 @@ package com.michael.shopapp;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.ByteArrayInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -24,12 +22,15 @@ import android.util.Log;
 
 public class GoodsListRunnable implements Runnable {
 	
-	private String category_name = null; 
+	//private String category_name = null; 
 	private List<Map<String, Object>> goodsItemList = null;
 	
-	public GoodsListRunnable(String category_name){
-		this.category_name = category_name;
+	public GoodsListRunnable(){
 	}
+	
+	//public GoodsListRunnable(String category_name){
+	//	this.category_name = category_name;
+	//}
 
 	@Override
 	public void run() {

@@ -43,7 +43,7 @@ public class CatalogRunnable implements Runnable{
 			BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream(), "utf-8"));
 			String jsonData = in.readLine();
 			if(null == jsonData){
-				Log.v("NetworkThread", "null == jsonData");
+				Log.v("CatalogRunnable", "null == jsonData");
 			}else{
 				//Log.v("NetworkThread", jsonData);
 				try{
@@ -54,7 +54,7 @@ public class CatalogRunnable implements Runnable{
 						catalogList.add(array2.getString(i));
 					}
 				}catch(Exception e){
-					Log.e("NetworkThread", e.toString());
+					Log.e("CatalogRunnable", e.toString());
 				}
 			}
 			//Log.d("NetworkThread", "thread finish");

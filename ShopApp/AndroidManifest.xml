@@ -44,6 +44,11 @@
             android:name="com.michael.shopapp.RegisterActivity"
             android:label="@string/app_name_register"> 
         </activity>
+        
+        <activity
+            android:name="com.michael.shopapp.LoginActivity"
+            android:label="@string/app_name_login">
+        </activity>
     </application>
 
 </manifest>

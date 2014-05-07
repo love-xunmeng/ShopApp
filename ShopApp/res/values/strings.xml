@@ -21,5 +21,8 @@
 	<string name="register_prompt_user_email">Email</string>
 	<string name="register_prompt_register">注册</string>
 	<string name="main_register">注册</string>
+	<string name="login">登陆</string>
+	<string name="login_prompt_mobile_phone">请输入手机号</string>
+	<string name="app_name_login">登陆</string>
     
 </resources>

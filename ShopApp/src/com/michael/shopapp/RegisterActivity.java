@@ -46,7 +46,7 @@ public class RegisterActivity extends Activity {
 					thread.join();
 					if(true == registerRunnable.getIsRegisterSuccess()){
 						
-						SharedPreferences sharedPreferences = getSharedPreferences("users", MODE_PRIVATE);
+						SharedPreferences sharedPreferences = getSharedPreferences("user", MODE_PRIVATE);
 						Editor editor = sharedPreferences.edit();
 						editor.putString("user_name", UserInfo.getInstance().getUserName());
 						editor.putString("mobile_phone", UserInfo.getInstance().getMobilePhone());

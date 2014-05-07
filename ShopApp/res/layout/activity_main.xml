@@ -11,5 +11,19 @@
         android:layout_height="wrap_content"
         android:text="@string/main_register">
     </Button>
+    
+    <Button
+        android:id="@+id/btnMainLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login">
+    </Button>
+    
+    <Button
+        android:id="@+id/btnClearSharedPreferences"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="删除SharedPreferences">
+    </Button>
    
 </LinearLayout>

@@ -2,6 +2,8 @@ package com.michael.shopapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -43,6 +45,15 @@ public class RegisterActivity extends Activity {
 					thread.start();
 					thread.join();
 					if(true == registerRunnable.getIsRegisterSuccess()){
+						
+						SharedPreferences sharedPreferences = getSharedPreferences("users", MODE_PRIVATE);
+						Editor editor = sharedPreferences.edit();
+						editor.putString("user_name", UserInfo.getInstance().getUserName());
+						editor.putString("mobile_phone", UserInfo.getInstance().getMobilePhone());
+						editor.putString("address", UserInfo.getInstance().getAddress());
+						editor.putString("email", UserInfo.getInstance().getEmail());
+						editor.commit();
+						
 						Intent intent = new Intent();
 						intent.setClass(RegisterActivity.this, CatalogActivity.class);
 						RegisterActivity.this.startActivity(intent);

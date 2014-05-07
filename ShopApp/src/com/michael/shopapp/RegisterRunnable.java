@@ -30,8 +30,8 @@ public class RegisterRunnable implements Runnable {
 	public void run() {
 		try{
 			socket = new Socket();
-			SocketAddress socketAddress = new InetSocketAddress("10.0.0.2", 7777);
-			socket.connect(socketAddress);
+			SocketAddress socketAddress = new InetSocketAddress("10.0.2.2", 7777);
+			socket.connect(socketAddress, 10);
 			PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(), "utf-8")), true);
 			JSONObject jsonObject = new JSONObject();
 			jsonObject.put("user_name", UserInfo.getInstance().getUserName());

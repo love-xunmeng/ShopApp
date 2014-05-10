@@ -76,8 +76,7 @@ public class GoodsListActivity extends ListActivity{
 	private List<Map<String, Object>> getData() {
 		List<Map<String, Object>> list = null;
 		try {
-			//GoodsListRunnable runnable = new GoodsListRunnable(category_name);
-			GoodsListRunnable runnable = new GoodsListRunnable();
+			GoodsListRunnable runnable = new GoodsListRunnable(category_name);
 			Thread thread = new Thread(runnable);
 			thread.start();
 			thread.join();

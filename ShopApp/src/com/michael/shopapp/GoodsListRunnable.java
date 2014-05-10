@@ -22,15 +22,12 @@ import android.util.Log;
 
 public class GoodsListRunnable implements Runnable {
 	
-	//private String category_name = null; 
+	private String category_name = null; 
 	private List<Map<String, Object>> goodsItemList = null;
 	
-	public GoodsListRunnable(){
+	public GoodsListRunnable(String category_name){
+		this.category_name = category_name;
 	}
-	
-	//public GoodsListRunnable(String category_name){
-	//	this.category_name = category_name;
-	//}
 
 	@Override
 	public void run() {
@@ -42,7 +39,7 @@ public class GoodsListRunnable implements Runnable {
 			BufferedWriter bw = new BufferedWriter(osw);
 			PrintWriter pw = new PrintWriter(bw, true);
 			pw.println("Goods");
-			//pw.println(category_name);
+			pw.println(category_name);
 			
 			InputStreamReader isr = new InputStreamReader(socket.getInputStream(), "utf-8");
 			BufferedReader br = new BufferedReader(isr);

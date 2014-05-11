@@ -13,6 +13,6 @@ public class GoodsListItem extends LinearLayout {
 	public GoodsListItem(Context context, AttributeSet attrs){
 		super(context, attrs);
 		LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		inflater.inflate(R.layout.goods_list_item, this);
+		inflater.inflate(R.layout.activity_goods_list_item, this);
 	}
 }

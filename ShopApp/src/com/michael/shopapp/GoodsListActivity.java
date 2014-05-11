@@ -127,7 +127,7 @@ public class GoodsListActivity extends ListActivity{
 			if(null == convertView) {
 				//Log.d("GoodsListActivity", "null == convertView");
 				holder = new ViewHolder();
-				convertView = mInflater.inflate(R.layout.goods_list_item, null);
+				convertView = mInflater.inflate(R.layout.activity_goods_list_item, null);
 				holder.img = (ImageView)convertView.findViewById(R.id.img);
 				holder.goods_name = (TextView)convertView.findViewById(R.id.title);
 				holder.info = (TextView)convertView.findViewById(R.id.info);

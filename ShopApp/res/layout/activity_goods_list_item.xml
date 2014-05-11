@@ -11,7 +11,7 @@
 	    android:adjustViewBounds="true"
 	    android:maxWidth="52sp"
 	    android:maxHeight="52sp"
-	    android:layout_margin="5dp"
+	    android:layout_margin="5sp"
 	    android:layout_alignParentLeft="true"
 	    android:contentDescription="@string/app_name">
 	</ImageView>
@@ -20,7 +20,9 @@
 	    android:orientation="vertical"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_toRightOf="@id/img">
+	    android:layout_toRightOf="@id/img"
+	    android:layout_marginTop="5sp"
+	    android:layout_marginBottom="5sp">
 	    	 
 	    <TextView
 	        android:id="@+id/title"
